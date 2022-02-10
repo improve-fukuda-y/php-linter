@@ -13,6 +13,7 @@
     <rule ref="Generic.WhiteSpace.ScopeIndent">
         <properties>
             <property name="exact" value="true" />
+        </properties>
     </rule>
 
     <rule ref="Generic.WhiteSpace.DisallowTabIndent" />
