@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ruleset name="MexPSR12">
+    <description>extends PSR12 coding standard.</description>
+
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/storage/*</exclude-pattern>
+
+    <rule ref="PSR12">
+        <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
+        <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps"/>
+    </rule>
+
+    <rule ref="Generic.WhiteSpace.ScopeIndent">
+        <properties>
+            <property name="exact" value="true" />
+    </rule>
+
+    <rule ref="Generic.WhiteSpace.DisallowTabIndent" />
+    <rule ref="Generic.Arrays.ArrayIndent" />
+    <rule ref="Squiz.PHP.NonExecutableCode.ReturnNotRequired" />
+    <rule ref="Squiz.PHP.NonExecutableCode.Unreachable" />
+
+</ruleset>
